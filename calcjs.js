@@ -1,3 +1,5 @@
+//Darren Rudinger - 13243791
+
 //Declaring variables to initiate counters and the memory value.
 var count = 0;
 var memValue = 0;
