@@ -1,0 +1,70 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 22px Arial, sans-serif;
+}
+
+
+
+/* Setting background box for entire calculator. */
+#calculator {
+	width: 628px;
+	height: 963px;
+	background: lightblue;
+}
+
+/* Formatting top div which contains the numbers and operators selected by the user. */
+.top input[type="text"] {
+	height: 180px;
+	width: 622px;
+	padding: 0 10px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	/* Formatting for text within the top div. */
+	font-size: 82px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+/* Creating layout for all buttons on the calculator including shadowing to create an illusion of depth. */
+.keys input[type="button"]  {
+	cursor: pointer;
+	font-size: 70px;
+	float: left;
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 4px blue;	
+	width: 150px;
+	height: 120px;
+	margin: 0 7px 11px 0;
+	color: #888;
+	line-height: 36px;
+	text-align: center;
+}
+
+/*Specific sizing requirement for equals button.*/
+.eq input[type="button"]{
+	width: 622px;
+}
+
+/* Creating mouse over effects to change colour of buttons when user moves cursor over them. */
+.keys input[type="button"]:hover {
+	background: blue;
+	box-shadow: 0px 4px black;
+	color: white;
+}
+
+/*Makes the button shadow disappear when the button is clicked to simulate a button being pressed down.*/
+.keys input[type="button"]:active {
+	box-shadow: 0px 0px;
+	top: 4px;
+}
+
